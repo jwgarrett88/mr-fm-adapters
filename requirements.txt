@@ -1,0 +1,22 @@
+# Versions below match the supplied running-system package list.
+matplotlib==3.9.1
+numpy==1.24.4
+optuna==5.0.0
+pandas==2.2.1
+scikit-learn==1.5.1
+seaborn==0.13.2
+tensorboard==2.9.0
+tqdm==4.66.4
+
+# Jupyter notebook runtime
+notebook==6.4.10
+
+# Used by the DenseNet notebooks, but not present in the supplied package list.
+# Install versions compatible with the environment and approved Flywheel setup.
+flywheel-sdk
+monai
+nibabel
+
+# PyTorch is installed as an NVIDIA-specific build on the supplied system:
+# 2.4.0a0+3bcc3cddb5.nv24.7. Install a build appropriate for your platform
+# separately; do not replace it with a generic PyPI build unintentionally.
